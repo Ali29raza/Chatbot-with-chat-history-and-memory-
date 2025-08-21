@@ -65,7 +65,7 @@ st.sidebar.title('LangGraph Chatbot')
 if st.sidebar.button('New Chat'):
     reset_chat()
 
-st.sidebar.header('My Conversations')
+st.sidebar.header('My Conversation History')
 
 for thread_id in st.session_state['chat_threads'][::-1]:
     if st.sidebar.button(str(thread_id)):
@@ -86,6 +86,15 @@ for thread_id in st.session_state['chat_threads'][::-1]:
 
 
 # **************************************** Main UI ************************************
+st.markdown(
+    """
+    LangGraph Based Conversational Chatbot
+
+    This app is an interactive conversational AI built using LangGraph and LangChain. 
+    It allows you to have multiple chat threads, manage conversations, 
+    and interact with an AI assistant that remembers context within each thread.
+    """
+)
 
 # loading the conversation history
 for message in st.session_state['message_history']:
@@ -124,3 +133,4 @@ if user_input:
 
 
     st.session_state['message_history'].append({'role': 'assistant', 'content': ai_message})
+
