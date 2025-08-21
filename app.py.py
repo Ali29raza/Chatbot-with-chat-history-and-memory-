@@ -88,7 +88,7 @@ for thread_id in st.session_state['chat_threads'][::-1]:
 # **************************************** Main UI ************************************
 st.title("LangGraph Based Conversational Chatbot")
 st.markdown(
-    ""
+    """
     This app is an interactive conversational AI built using LangGraph and LangChain. 
     It allows you to have multiple chat threads, manage conversations, 
     and interact with an AI assistant that remembers context within each thread.
@@ -132,5 +132,6 @@ if user_input:
 
 
     st.session_state['message_history'].append({'role': 'assistant', 'content': ai_message})
+
 
 
