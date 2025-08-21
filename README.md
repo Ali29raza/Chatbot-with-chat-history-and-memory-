@@ -86,20 +86,6 @@ Then open <http://localhost:8501> in your browser.
 -   **Google Generative AI (Gemini 2.0 Flash)**
 -   **SQLite (for checkpointing & thread storage)**
 
-------------------------------------------------------------------------
-
-## 📌 Future Enhancements
-
--   Add **user authentication** for personalized chats.
--   Support for **multimodal inputs** (text + image).
--   Enhanced UI/UX with themes and better sidebar organization.
-
-------------------------------------------------------------------------
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first
-to discuss what you'd like to change.
 
 ------------------------------------------------------------------------
 
